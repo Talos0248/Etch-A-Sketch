@@ -1,0 +1,52 @@
+body{
+    background-color:#400D51;
+    font-family: 'Tilt Neon';
+    box-sizing: border-box;
+}
+h1{
+    color:#00fbff;
+    animation: glow 4s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffffff5c, 0 0 20px #04ffde48, 0 0 30px rgb(4, 255, 222, 50);
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6;
+    }
+  }
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+.controls{
+    height: 400px;
+    width: 300px;
+    border: 2px solid #00fbff;
+}
+
+.sketchpad{
+    flex:3
+}
+
+
+
+#cyberkitty{
+    width: 80px;
+    align-self: center;
+    margin: 0 20px;
+}
