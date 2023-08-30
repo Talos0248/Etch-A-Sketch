@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&family=Roboto&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Cyberkitty's Neon Artpad <img id="cyberkitty" src="./src/Cyberkitty.svg" alt="Cyberkitty logo"></h1>
+    <div class="container header">
+        <h1>Cyberkitty's Neon Artpad </h1>
+        <img id="cyberkitty" src="./src/Cyberkitty.svg" alt="Cyberkitty logo">
+    </div>
+    <main>
+        <div class="container content">
+            <!-- Sketchpad -->
+            <div class="container sketchpad" id="sketchpad">
+
+            </div>
+
+            <!-- Controls -->
+            <div class="container controls">
+                <div class="container control row-display" id="pen-color-container">
+                    <label for="pen-color">Color:</label>
+                    <input type="color" id="pen-color" name="pen-color" value="#ff0000">
+                </div>
+
+                <div class="container control row-display" id="color-mode-container">
+                    <label for="color-mode"></label>
+                    <input type="button" value="Color Mode" id="color-mode">
+                </div>
+
+                <div class="container control row-display" id="rainbow-dreams-container">
+                    <button class="rainbow-dreams" id="rainbow">Rainbow Dreams</button>
+                </div>
+
+                <div class="container control column-display" id="canvas-size-container">
+                    <label class="control-label" for="canvas-size">16x16</label>
+                    <input type="range" name="size" id="canvas-size" value="16">
+                </div>
+
+            </div>
+
+    </main>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
