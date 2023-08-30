@@ -34,9 +34,19 @@ h1{
   }
 
 .controls{
-    height: 400px;
-    width: 300px;
+    /* height: 400px;
+    width: 200px; */
     border: 2px solid #00fbff;
+}
+
+.row-display{
+  display: flex;
+  flex-direction: row;
+}
+
+.column-display{
+  display: flex;
+  flex-direction: column;
 }
 
 .sketchpad{
